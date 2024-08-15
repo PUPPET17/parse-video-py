@@ -13,7 +13,7 @@ COPY ./main.py /app/
 
 
 # 安装 Python 应用程序所需的依赖包
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 暴露 FastAPI 应用程序的端口
 EXPOSE 8000
